@@ -2,9 +2,9 @@ const prevButton = document.getElementById('prev')
 const nextButton = document.getElementById('next')
 const container = document.querySelector('.container')
 const items = container.querySelectorAll('.list .item')
+const list = container.querySelector('.list')
 const indicator = document.querySelector('.indicators')
 const dots = indicator.querySelectorAll('ul li')
-const list = container.querySelector('.list')
 
 let active = 0
 const firstPosition = 0

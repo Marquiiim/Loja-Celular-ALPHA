@@ -31,18 +31,36 @@ header {
 
     & h1 {
         width: 250px;
+        padding-top: 11px;
     }
 
     & nav {
         & ul {
-            display: grid;
+            padding-top: 11px;
+            display: flex;
             grid-template-columns: repeat(3, 200px);
+        }
+
+        & li {
+            transition: 0.4s;
+            text-align: center;
+            width: 100%;
+        }
+
+        & a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        & li:hover {
+            background-color: rgba(0, 0, 0, 0.425);
+            border-radius: 10px;
+            padding: 6px 20px;
         }
     }
 }
 
 header {
-
     & .front-page {
         cursor: pointer;
     }
@@ -59,6 +77,7 @@ header {
         cursor: pointer;
     }
 }
+
 
 section {
     background-image: radial-gradient(#6caeda, #6caeda6a);
@@ -120,12 +139,12 @@ section {
                     height: 35px;
                     width: 120px;
                     text-transform: uppercase;
-                    border: 2px solid #fff;
+                    border: none;
+                    font-size: medium;
                     background-color: #6caeda6a;
                     color: #fff;
-                    cursor: pointer;
-                    font-weight: bold;
                     font-family: "League Gothic", sans-serif;
+                    cursor: pointer;
                 }
             }
         }
@@ -170,7 +189,12 @@ section {
             }
 
             &:hover {
-                background-color: #6caeda6a;
+                transition: all .4s;
+                transform: scale(1.10);
+            }
+
+            &:active {
+                background-color: rgba(0, 0, 0, 0.425);
             }
         }
     }
@@ -235,7 +259,7 @@ section {
                 & .cell-information,
                 h2,
                 .description,
-                .more  {
+                .more {
                     transform: translateX(calc(200px * var(--calculation)));
                     transition: 0.7s;
                     transition-delay: 0.3s;
