@@ -1,7 +1,6 @@
 # Loja de iPhones
 
-**Loja de iPhones** é uma aplicação web simples que simula uma loja virtual de iPhones. Focada no **frontend**, a aplicação permite aos usuários visualizar modelos de iPhones, adicionar produtos ao carrinho e realizar uma compra simulada. O projeto também conta com funcionalidades **backend** para gerenciar dinamicamente o catálogo de produtos e processar pedidos.
-
+**Loja de iPhones** é uma aplicação web simples que simula uma loja virtual de iPhones. Focada no **frontend**, a aplicação permite aos usuários visualizar modelos de iPhones.
 ## Funcionalidades
 
 - **Exibição de Produtos**: Lista de iPhones com detalhes, como preço e imagem.
